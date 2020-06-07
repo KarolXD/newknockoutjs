@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Student Register";
+}
+
+
+<div class="page-header">
+    <h2 class="text-center">Registrar Persona</h2>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="inpFirstName">Apellido</label>
+                <input id="apellido" name="apellido" type="text" required class="form-control text-box single-line" value="" data-bind="value: apellido" />
+
+            </div>
+
+            <div class="form-group">
+                <label for="inpLastName">Nombre</label>
+                <input id="nombre" name="nombre" type="text" required class="form-control text-box single-line" value="" data-bind="value: nombre" />
+            </div>
+
+            <div class="form-group">
+                <label for="inpAge">  Correo  </label>
+                <input id="correo" name="correo" type="email" required class="form-control text-box single-line" value="" data-bind="value: correo" />
+            </div>
+
+
+            <div class="form-group">
+                <label for="txtDescription">Cedula</label>
+                <input id="cedula" type="text" name="cedula" required class="form-control text-box single-line" value="" data-bind="value: cedula" />
+            </div>
+            <button type="button" class="btn btn-primary" data-bind="click: SaveStudent">Click me</button>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/knockout-3.5.1.js"></script>
+<script src="~/Scripts/ViewModels/KOCreate.js"></script>

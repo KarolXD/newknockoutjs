@@ -1,0 +1,15 @@
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\bin\Debug\netstandard2.0\ENTIDAD.deps.json
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\bin\Debug\netstandard2.0\ENTIDAD.dll
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\bin\Debug\netstandard2.0\ENTIDAD.pdb
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\bin\Debug\netstandard2.0\System.ComponentModel.DataAnnotations.dll
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\bin\Debug\netstandard2.0\System.Configuration.dll
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\bin\Debug\netstandard2.0\System.Security.dll
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\bin\Debug\netstandard2.0\System.ComponentModel.DataAnnotations.xml
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\bin\Debug\netstandard2.0\System.Configuration.xml
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\bin\Debug\netstandard2.0\System.Security.xml
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\obj\Debug\netstandard2.0\ENTIDAD.csproj.CoreCompileInputs.cache
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\obj\Debug\netstandard2.0\ENTIDAD.AssemblyInfoInputs.cache
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\obj\Debug\netstandard2.0\ENTIDAD.AssemblyInfo.cs
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\obj\Debug\netstandard2.0\ENTIDAD.csproj.CopyComplete
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\obj\Debug\netstandard2.0\ENTIDAD.dll
+D:\Usuarios\Usuario\source\repos\knockoutjs\Knockoutjs\ENTIDAD\obj\Debug\netstandard2.0\ENTIDAD.pdb
