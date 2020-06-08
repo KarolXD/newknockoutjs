@@ -62,7 +62,7 @@ namespace DATOS
             {
           
                 comando.Connection = conexion;
-              //  conexion.Open();
+                conexion.Open();
                 comando.CommandText = "exec PA_Registrar @cedula,@nombre,@apellido,@correo";
                 comando.Parameters.AddWithValue("@cedula", persona.cedula);
                 comando.Parameters.AddWithValue("@nombre", persona.nombre);

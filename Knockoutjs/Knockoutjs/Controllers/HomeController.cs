@@ -10,6 +10,7 @@ namespace Knockoutjs.Controllers
 {
     public class HomeController : Controller
     {
+        NEGOCIO.Negocio_Persona metodos = new NEGOCIO.Negocio_Persona();
         public ActionResult Index()
         {
             return View();
@@ -31,10 +32,24 @@ namespace Knockoutjs.Controllers
             if (!ModelState.IsValid) return "Model is invalid";
             else
             {
-                NEGOCIO.Negocio_Persona metodos = new NEGOCIO.Negocio_Persona();
+                
                 metodos.registrar(persona);
                 return " Persona registrada";
             }
         }
+
+
+
+        public ActionResult Leer()
+        {
+            return View();
+        }
+        //GET All Courses
+        public JsonResult Listar()
+        {
+            return Json(metodos.listado(), JsonRequestBehavior.AllowGet);
+        }
+
+
     }
 }

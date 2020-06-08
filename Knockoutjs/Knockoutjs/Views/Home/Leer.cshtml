@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Leer";
+}
+
+<h2>Leer</h2>
+
+
+
+<p>
+    @Html.ActionLink("Registrar", "Registrar", "Home")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Apellido
+        </th>
+        <th>
+            Correo
+        </th>
+        <th>
+            Cedula
+        </th>
+        <th></th>
+    </tr>
+    <tbody data-bind="foreach: Persona">
+        <tr>
+            <td data-bind="text: id"></td>
+            <td data-bind="text: nombre"></td>
+            <td data-bind="text: apellido"></td>
+            <td data-bind="text: correo"></td>
+            <td data-bind="text: cedula"></td>
+            <td>
+                <a data-bind="attr: { 'href': '@Url.Action("Edit", "Home")/' + id }" class="btn-link">Edit</a>
+                <a data-bind="attr: { 'href': '@Url.Action("Delete", "Home")/' + id }" class="btn-link">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/knockout-3.5.1.js"></script>
+<script src="~/Scripts/ViewModels/KORead.js"></script>
+
+
+
+
+
