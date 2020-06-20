@@ -25,7 +25,14 @@ namespace Knockoutjs.Controllers
 
             return View();
         }
-       
+
+        public ActionResult KOjsExamples()
+        {
+            
+
+            return View();
+        }
+
 
         // POST: Home/Create
         [System.Web.Mvc.HttpPost]
