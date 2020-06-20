@@ -83,7 +83,46 @@ namespace DATOS
             finally { conexion.Close(); }
             return 0;
         }//fin
+        public ENTIDAD.Persona selById(int id) {
+            ENTIDAD.Persona student = null;
+            SqlCommand comando = new SqlCommand();
+            try
+            {
+                comando.Connection = conexion;
+                conexion.Open();
+                comando.CommandText = "exec PA_list_by_id  @id";
+                comando.Parameters.AddWithValue("@id", id);
+                SqlDataAdapter da = new SqlDataAdapter(comando);
+                int result = comando.ExecuteNonQuery();
+                DataSet ds = new DataSet();
+                da.Fill(ds);
 
+                
+
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    for (int i = 0; i <= ds.Tables[0].Rows.Count - 1; i++)
+                    {
+                        student = new ENTIDAD.Persona();
+                        student.id = int.Parse(ds.Tables[0].Rows[i][0].ToString());
+                        student.cedula = (ds.Tables[0].Rows[i][1].ToString());
+                        student.nombre = (ds.Tables[0].Rows[i][2].ToString());
+                        student.apellido = (ds.Tables[0].Rows[i][3].ToString());
+                        student.correo = (ds.Tables[0].Rows[i][4].ToString());
+                        //listar.Add(student);
+                    }
+                }
+                //int result = comando.ExecuteNonQuery();
+
+                return student;
+            }
+            catch (Exception) { }
+            finally { conexion.Close(); }
+            return student;
+
+            
+
+        }
         public int modificar(ENTIDAD.Persona persona)
         {
             SqlCommand comando = new SqlCommand();

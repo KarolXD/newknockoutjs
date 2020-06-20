@@ -18,9 +18,17 @@ var modelView = {
                 error: function (err) {
                     alert(err.status + " : " + err.statusText);
                 }
+                
             });
+           
         } catch (e) {
             window.location.href = '/Home/Leer/';
-        }
+        };
+
     }
+    
+   
 };
+
+
+

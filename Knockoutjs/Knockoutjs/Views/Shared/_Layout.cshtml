@@ -20,8 +20,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>               
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("CRUD Persona", "Leer", "Home")</li>
+                    <li>@Html.ActionLink("Ejemplos KOjs", "KOjsExamples", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -34,9 +35,9 @@
         </footer>
     </div>
 
-    @*@Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")*@
-  
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @Scripts.Render("~/bundles/bootstrap")
+
 
     @RenderSection("scripts", required: false)
 </body>

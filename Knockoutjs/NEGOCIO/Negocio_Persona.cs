@@ -28,5 +28,10 @@ namespace NEGOCIO
         {
             return dato.listado();
         }
+
+        public ENTIDAD.Persona selById(int id)
+        {
+            return dato.selById(id);
+        }
     }
 }

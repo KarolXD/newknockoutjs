@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "KOjsExamples";
+}
+
+
+<div class="row">
+
+    <div class="col-md-6">
+        <h2>KOjsExample1</h2>
+        <div>First name: <input type="text" data-bind="value: firstName"></input></div>
+        <div>Last name: <input type="text" data-bind="value: lastName"></input></div>
+
+        <hr />
+
+
+
+        <div class="alert-success">First name: <span data-bind="html: firstName"></span></div>
+        <div class="alert-success">Last name: <span data-bind="html: lastName"></span></div>
+        <div class="alert-success"> Full Name: <span data-bind="html: fullName"></span></div>
+
+    </div>
+
+
+    <div class="col-md-6">
+        <h2>KOjsExample2</h2>
+        <div>First name: <input type="text" data-bind="textInput: firstName2"></input></div>
+        <div>Last name: <input type="text" data-bind="textInput: lastName2"></input></div>
+
+        <hr />
+
+
+
+        <div class="alert-success">First name: <span data-bind="html: firstName2"></span></div>
+        <div class="alert-success">Last name: <span data-bind="html: lastName2"></span></div>
+        <div class="alert-success"> Full Name: <span data-bind="html: fullName2"></span></div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/knockout-3.5.1.js"></script>
+<script src="~/Scripts/ViewModels/KOExample.js"></script>
